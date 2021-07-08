@@ -10,7 +10,7 @@ cat $1 | grep output | sed 's/output.*reg/wire/g' | sed 's/output/wire/g' | sed 
 
 
 M=${#PARAMETERS[*]}
-if [ M == 0 ]
+if [ $M == 0 ]
 then
     echo "    ${MODULE_NAME} ${MODULE_NAME}_inst("
 else
